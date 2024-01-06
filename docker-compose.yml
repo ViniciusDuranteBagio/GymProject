@@ -1,6 +1,6 @@
 services:
     web:
-        container_name: "my_gym_trainer_web"
+        container_name: "gym_project_web"
         build: .
         ports:
             - "80:80"
@@ -21,7 +21,7 @@ services:
 
     database:
         image: mariadb:10.2.25-bionic
-        container_name: "my_gym_trainer_db"
+        container_name: "gym_project_db"
         ports:
             - "3306:3306"
         networks:
